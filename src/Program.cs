@@ -14,11 +14,6 @@
             nancyHost.Start();
 
             Console.WriteLine("Nancy now listening - navigating to http://0.0.0.0:" + port +". Press enter to stop");
-            Console.ReadKey();
-
-            nancyHost.Stop();
-
-            Console.WriteLine("Stopped. Good bye!");
         }
     }
 }
