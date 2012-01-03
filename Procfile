@@ -1,1 +1,1 @@
-web: mono src/bin/Nancy.Demo.Hosting.Self.exe
+web: sh mono src/bin/Nancy.Demo.Hosting.Self.exe
