@@ -9,10 +9,11 @@
     {
         static void Main()
         {
-            var nancyHost = new NancyHost(new Uri("http://localhost:8888/nancy/"), new Uri("http://127.0.0.1:8888/nancy/"), new Uri("http://localhost:8889/nancytoo/"));
+            var port = System.Environment.GetEnvironmentVariable("PORT");
+            var nancyHost = new NancyHost(new Uri("http://0.0.0.0:" + port));
             nancyHost.Start();
 
-            Console.WriteLine("Nancy now listening - navigating to http://localhost:8888/nancy/. Press enter to stop");
+            Console.WriteLine("Nancy now listening - navigating to http://0.0.0.0:" + port +". Press enter to stop");
             Console.ReadKey();
 
             nancyHost.Stop();
