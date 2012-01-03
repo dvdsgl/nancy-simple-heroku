@@ -10,10 +10,10 @@
         static void Main()
         {
             var port = System.Environment.GetEnvironmentVariable("PORT");
-            var nancyHost = new NancyHost(new Uri("http://127.0.0.1:" + port), new Uri("http://127.0.0.1:" + port + "/"));
+            var nancyHost = new NancyHost(new Uri("http://deep-moon-1452.herokuapp.com:" + port), new Uri("http://deep-moon-1452.herokuapp.com:" + port + "/"));
             nancyHost.Start();
 
-            Console.WriteLine("Nancy now listening - navigating to http://127.0.0.1:" + port +".");
+            Console.WriteLine("Nancy now listening - navigating to http://deep-moon-1452.herokuapp.com:" + port +".");
 
             var line = Console.ReadLine();
             while(line != "quit") {
