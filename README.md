@@ -5,20 +5,9 @@ All of the heavy lifting was done by [Ben Hall](https://github.com/BenHall); the
 goal of this fork is simply to collect and document Ben's hard work to make
 simple C# apps on Heroku easier to create.
 
-## Setup Dependencies
+## Dependencies
 
-Create a Heroku account, then do the following to install Heroku tools
-and login to your Heroku account:
-
-```shell
-$ # Install Homebrew (package manager that installs heroku tools)
-$ ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
-$ # Install Heroku Toolbelt
-$ brew install heroku-toolbelt
-$ # Create symlinks to heroku tools
-$ sudo brew link heroku-toolbelt
-$ heroku login
-```
+First, you'll need to create a Heroku account and install the [Heroku toolbelt](https://toolbelt.heroku.com/).
 
 ## Creating a New Heroku App
 
