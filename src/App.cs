@@ -17,7 +17,7 @@ namespace Nancy.Simple
 
 		static Env CurrentEnv {
 			get {
-				return PORT == null ? Env.Staging : Env.Deployment;
+				return HOST == null ? Env.Staging : Env.Deployment;
 			}
 		}
 
@@ -38,7 +38,10 @@ namespace Nancy.Simple
 		{
 			Host = new NancyHost (CurrentAddress);
 			Host.Start ();
+			Console.WriteLine ("Nancy is started and listening on {0}...", CurrentAddress);
+
 			KeepAlive ();
+
 			Host.Stop ();
 		}
 
