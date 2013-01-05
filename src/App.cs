@@ -27,7 +27,7 @@ namespace Nancy.Simple
 				case Env.Staging:
 					return new Uri ("http://localhost:" + StagingPort);
 				case Env.Deployment:
-					return new Uri (HOST + ":" + PORT);
+					return new Uri ("http://" + HOST + ":" + PORT);
 				default:
 					throw new Exception ("Unexpected environment");
 				}
