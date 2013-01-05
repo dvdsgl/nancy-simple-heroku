@@ -7,19 +7,32 @@ simple C# apps on Heroku easier to create.
 
 ## Setup Dependencies
 
+Create a Heroku account, then do the following to install Heroku tools
+and login to your Heroku account:
+
 ```shell
-$ # Get RVM (Ruby Version Manager)
-$ curl -L https://get.rvm.io | bash -s stable --ruby
-$ # Load RVM
-$ source ~/.rvm/scripts/rvm
-$ # Install Heroku and other Ruby dependencies
-$ bundle install
+$ # Install Homebrew (package manager that installs heroku tools)
+$ ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
+$ # Install Heroku Toolbelt
+$ brew install heroku-toolbelt
+$ # Create symlinks to heroku tools
+$ sudo brew link heroku-toolbelt
+$ heroku login
 ```
 
 ## Creating a New Heroku App
 
+When you create a new Heroku app, Heroku automatically assigns you a
+hostname for your app. In the example below, the hostname is
+`stark-hollows-8350.herokuapp.com`. You need to save this hostname in an
+environment variable named `HOST` for the Nancy app to bind to the
+correct Uri; *do not* just copy-paste the source below–you must specify
+your unique host.
+
 ```shell
 $ heroku create --stack cedar --buildpack http://github.com/BenHall/heroku-buildpack-mono
+$ heroku config:set HOST=stark-hollows-8350.herokuapp.com
+$ git push heroku master
 ```
 
 ## Building Locally
