@@ -1,7 +1,7 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.Demo.Hosting.Self", "src\Nancy.Demo.Hosting.Self.csproj", "{0B3EA40E-F7D8-4E14-A30F-1536F41B62D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.Simple", "src\Nancy.Simple.csproj", "{0B3EA40E-F7D8-4E14-A30F-1536F41B62D1}"
 EndProject
 
 Global

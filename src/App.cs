@@ -2,17 +2,18 @@
 using System.Diagnostics;
 using Nancy.Hosting.Self;
 
-namespace Nancy.Demo.Hosting.Self
+namespace Nancy.Simple
 {
-	class Program
+	class App
 	{
 		static NancyHost Host;
 
 		static void Main (string[] args)
 		{
-			Host = new NancyHost (new Uri ("http://0.0.0.0:8080"));
+			Host = new NancyHost (new Uri ("http://localhost:8080"));
 			Host.Start ();
-			Console.ReadLine ();
+			Console.ReadKey ();
+			Host.Stop ();
 		}
 	}
 }
