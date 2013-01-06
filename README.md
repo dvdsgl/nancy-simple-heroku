@@ -5,8 +5,6 @@ deployment on Heroku. All you have to do to get a C# web app deployed on
 Heroku is:
 
 ```shell
-$ git clone https://github.com/dvdsgl/nancy-simple-heroku.git
-$ cd nancy-simple-heroku
 $ rake init
 ```
 
