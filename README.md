@@ -61,13 +61,14 @@ $ rake deploy
 I'm a developer who uses OS X and loves how easy Heroku makes web app
 deployment. Heroku's path of least resistance is to use Rails or Node to
 create your web app, and while I adore CoffeeScript and have some
-experience writing web apps with Rails and Node, sometimes I just need
-to write my web app in a statically-typed language. I'm a huge fan of
-the Mono project, and want to run web apps on Mono, but I've always
-found .NET web app configuration and deployment overly complicated,
-especially since I don't use Windows or Visual Studio as my main
-development environment, and I want something 'lighter' than ASP.NET for
-simple web services.
+experience writing web apps with Rails and Node, sometimes I want
+to write my web app in a statically-typed language.
+
+I'm a huge fan of the Mono project, and want to run web apps on Mono,
+but I've always found .NET web app configuration and deployment overly
+complicated, especially since I don't use Windows or Visual Studio as my
+main development environment, and I want something 'lighter' than
+ASP.NET for simple web services.
 
 [Nancy](http://nancyfx.org/) is a Sinatra-esque DSL in C# for creating
 web apps, and Ben Hall created a Heroku buildpack for Mono and blogged
