@@ -25,4 +25,5 @@ task :init do
 		puts "Could not detect app hostname. Please configure your HOST environment variable manually"
 	end
 	Rake::Task[:deploy].invoke
+	sh "heroku open"
 end
