@@ -15,7 +15,9 @@ That's all you have to do to get a C# web app deployed on Heroku.
 
 ## Dependencies
 
-First, you'll need to create a Heroku account and install the [Heroku toolbelt](https://toolbelt.heroku.com/).
+First off, you need to [get Mono](http://www.go-mono.com/mono-downloads/download.html),
+create a [Heroku account](https://api.heroku.com/signup),
+and install the [Heroku toolbelt](https://toolbelt.heroku.com/) if you haven't already.
 
 Then, to create a new Heroku app, deploy your app to Heroku, and open it in
 your browser, simply do:
