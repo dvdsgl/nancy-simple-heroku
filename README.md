@@ -3,7 +3,7 @@
 A bare-bones, self-hosting Nancy app with instructions for Heroku deployment.
 All of the heavy lifting was done by [Ben Hall](https://github.com/BenHall); the
 goal of this fork is simply to collect and document Ben's hard work to make
-simple C# apps on Heroku easier to create:
+simple C# apps on Heroku even easier to create:
 
 ```shell
 $ git clone https://github.com/dvdsgl/nancy-simple-heroku.git
