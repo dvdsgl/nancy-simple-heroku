@@ -11,31 +11,46 @@ First, you'll need to create a Heroku account and install the [Heroku toolbelt](
 
 ## Creating a New Heroku App
 
-When you create a new Heroku app, Heroku automatically assigns you a
-hostname for your app. In the example below, the hostname is
-`stark-hollows-8350.herokuapp.com`. You need to save this hostname in an
-environment variable named `HOST` for the Nancy app to bind to the
-correct Uri; *do not* just copy-paste the source below–you must specify
-your unique host.
+To build and run your app locally, just do:
 
 ```shell
-$ heroku create --stack cedar --buildpack http://github.com/BenHall/heroku-buildpack-mono
-$ heroku config:set HOST=stark-hollows-8350.herokuapp.com
-$ git push heroku master
+$ rake
+```
+
+To create a new Heroku app, deploy your app to Heroku, and open it in
+your browser, simply do:
+
+```shell
+$ rake init
+```
+
+You should only run `rake init` once.  When Heroku creates a new app, it
+assigns a unique hostname to your app,
+`stark-hollows-8350.herokuapp.com` for example.  You need to save this
+hostname in an environment variable named `HOST` for the Nancy app to
+bind to the correct Uri. `rake init` does this step for you, but if you
+ever change your Heroku host name, remember to update `HOST`:
+
+```shell
+$ heroku config:add HOST=<your new hostname>
 ```
 
 ## Building Locally
 
-Before deploying your source code you will need to ensure that it builds locally. For example:
-
 ```shell
-$ xbuild Nancy.Demo.Hosting.Self.sln
+$ rake build
 ```
 
 ## Running Locally
 
-To test running your application locally, execute the following:
+```shell
+$ rake stage # or just `rake`
+```
+
+## Deploying to Heroku
+
+This is merely a shortcut for `git push heroku master`:
 
 ```shell
-$ foreman start local
+$ rake deploy
 ```
