@@ -14,7 +14,7 @@ All of the heavy lifting was done by [Ben Hall](https://github.com/BenHall); the
 goal of this fork is simply to collect and document Ben's hard work to
 make it even easier to create simple C# apps on Heroku.
 
-## Dependencies
+### First Steps
 
 First off, you need to [get
 Mono](http://www.go-mono.com/mono-downloads/download.html), create a
@@ -37,19 +37,19 @@ your Heroku host name, remember to update `HOST`:
 $ heroku config:add HOST=<your new hostname>
 ```
 
-## Building Locally
+### Building
 
 ```shell
 $ rake build
 ```
 
-## Running Locally
+### Running your app locally
 
 ```shell
 $ rake stage # or just `rake`
 ```
 
-## Deploying to Heroku
+### Deploying to Heroku
 
 This is merely a shortcut for `git push heroku master`:
 
