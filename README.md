@@ -3,21 +3,21 @@
 A bare-bones, self-hosting Nancy app with instructions for Heroku deployment.
 All of the heavy lifting was done by [Ben Hall](https://github.com/BenHall); the
 goal of this fork is simply to collect and document Ben's hard work to make
-simple C# apps on Heroku easier to create.
+simple C# apps on Heroku easier to create:
+
+```shell
+$ git clone https://github.com/dvdsgl/nancy-simple-heroku.git
+$ cd nancy-simple-heroku
+$ rake init
+```
+
+That's all you have to do to get a C# web app deployed on Heroku.
 
 ## Dependencies
 
 First, you'll need to create a Heroku account and install the [Heroku toolbelt](https://toolbelt.heroku.com/).
 
-## Creating a New Heroku App
-
-To build and run your app locally, just do:
-
-```shell
-$ rake
-```
-
-To create a new Heroku app, deploy your app to Heroku, and open it in
+Then, to create a new Heroku app, deploy your app to Heroku, and open it in
 your browser, simply do:
 
 ```shell
