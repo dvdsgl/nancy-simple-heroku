@@ -1,4 +1,4 @@
-# A Simple Nancy App for Heroku
+# A simple C# app the deploys to Heroku in one step
 
 This repo contains a bare-bones, self-hosting Nancy app prepared for
 deployment on Heroku. All you have to do to get a C# web app deployed on
