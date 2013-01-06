@@ -61,7 +61,7 @@ $ rake deploy
 I'm a developer who uses OS X and loves how easy Heroku makes web app
 deployment. Heroku's path of least resistance is to use Rails or Node to
 create your web app, and while I adore CoffeeScript and have some
-experience writing web apps with Rails and Node, sometimes I want
+experience writing web apps with Rails and Express, sometimes I want
 to write my web app in a statically-typed language.
 
 I'm a huge fan of the Mono project, and want to run web apps on Mono,
