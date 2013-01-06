@@ -29,7 +29,7 @@ $ rake init
 You should only run `rake init` once.  When Heroku creates a new app, it
 assigns a unique hostname to your app–something like
 `stark-hollows-8350.herokuapp.com`, for example. `rake init` reads this
-hostname and saves it in a Heroku environment variable named `HOST`,
+hostname and saves it in a Heroku environment variable,
 which the Nancy app reads to bind to the correct URL. If you ever change
 your Heroku host name, remember to update `HOST`:
 
